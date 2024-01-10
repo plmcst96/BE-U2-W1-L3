@@ -1,9 +1,6 @@
 package cristinapalmisani.U2W1L1.entities;
 
-import lombok.AllArgsConstructor;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
+import lombok.*;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -12,10 +9,12 @@ import java.util.List;
 @Setter
 @AllArgsConstructor
 @ToString
+@NoArgsConstructor
 public class Menu {
     private List<Pizzas> pizzasList;
     private List<Drinks> drinksList;
     private List<Toppings> toppingList;
+
 
     public void printMenu() {
         System.out.println("******* Menu *******");
